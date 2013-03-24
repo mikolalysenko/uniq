@@ -37,6 +37,7 @@ Removes all duplicates from a sorted array in place.
 
 ## Why use this instead of underscore.uniq[ue]?
 A few reasons:
+
 * This library updates the array in place without making an extra copy (and so it is faster for large arrays)
 * It also accepts a custom comparison function so you can remove duplicates from arrays containing object
 * It is more modular in the sense that it doesn't come with a bazillion other utility grab bag functions.
