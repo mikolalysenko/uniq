@@ -23,15 +23,16 @@ console.log(arr)
 //
 ```
 
-## `require("uniq")(array[, compare])`
+## `require("uniq")(array[, compare, sorted])`
 Removes all duplicates from a sorted array in place.
 
 * `array` is the array to remove items from
 * `compare` is an optional comparison function that returns 0 when two items are equal, and something non-zero when they are different.  If unspecified, then the default equals will be used.
+* `sorted` if true, then assume array is already sorted
 
 **Returns:** A reference to `array`
 
-**Time Complexity:** `O(array.length)`
+**Time Complexity:** `O(array.length * log(arra.length))` or `O(array.length)` if `sorted`
 
 
 ## Why use this instead of underscore.uniq[ue]?
