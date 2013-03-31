@@ -14,7 +14,6 @@ Then use it as follows:
 
 var arr = [1, 1, 2, 2, 3, 5]
 
-arr.sort()
 require("uniq")(arr)
 console.log(arr)
 

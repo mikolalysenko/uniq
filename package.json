@@ -1,6 +1,6 @@
 {
   "name": "uniq",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Removes duplicates from a sorted array in place",
   "main": "uniq.js",
   "directories": {
