@@ -1,6 +1,6 @@
 var unique = require("../uniq.js")
 
-require("tap").test("unique", function(t) {
+require("tape")("unique", function(t) {
 
   t.equals(unique([1,1,2,3,5,5,7]).join(), [1,2,3,5,7].join())
   t.equals(unique([]).join(), [].join())

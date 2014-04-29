@@ -1,6 +1,6 @@
 {
   "name": "uniq",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Removes duplicates from a sorted array in place",
   "main": "uniq.js",
   "directories": {
@@ -8,10 +8,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tap": "~0.4.0"
+    "tape": "^2.12.3"
   },
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tape test/*.js"
   },
   "repository": {
     "type": "git",
