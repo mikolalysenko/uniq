@@ -40,7 +40,7 @@ function unique_eq(list) {
 
 function unique(list, compare, sorted) {
   if(list.length === 0) {
-    return []
+    return list
   }
   if(compare) {
     if(!sorted) {
