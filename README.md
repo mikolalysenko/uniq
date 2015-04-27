@@ -32,7 +32,7 @@ Removes all duplicates from a sorted array in place.
 
 **Returns:** A reference to `array`
 
-**Time Complexity:** `O(array.length * log(arra.length))` or `O(array.length)` if `sorted`
+**Time Complexity:** `O(array.length * log(array.length))` or `O(array.length)` if `sorted`
 
 
 ## Why use this instead of underscore.uniq[ue]?
