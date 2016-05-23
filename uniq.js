@@ -1,6 +1,6 @@
 "use strict"
 
-function unique_pred(list, compare) {
+function unique_pred(list, compare, warn) {
   var ptr = 1
     , len = list.length
     , a = list[0], b = list[0]
@@ -13,13 +13,15 @@ function unique_pred(list, compare) {
         continue
       }
       list[ptr++] = a
+    } else {
+      warn(a);
     }
   }
   list.length = ptr
   return list
 }
 
-function unique_eq(list) {
+function unique_eq(list, warn) {
   var ptr = 1
     , len = list.length
     , a = list[0], b = list[0]
@@ -33,12 +35,14 @@ function unique_eq(list) {
       }
       list[ptr++] = a
     }
+  } else {
+    warn(a);
   }
   list.length = ptr
   return list
 }
 
-function unique(list, compare, sorted) {
+function unique(list, compare, sorted, warn) {
   if(list.length === 0) {
     return list
   }
@@ -46,12 +50,12 @@ function unique(list, compare, sorted) {
     if(!sorted) {
       list.sort(compare)
     }
-    return unique_pred(list, compare)
+    return unique_pred(list, compare, warn)
   }
   if(!sorted) {
     list.sort()
   }
-  return unique_eq(list)
+  return unique_eq(list, warn)
 }
 
 module.exports = unique
