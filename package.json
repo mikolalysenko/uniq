@@ -32,5 +32,6 @@
   "author": "Mikola Lysenko",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "e9828cfcb97e25a351f95b39fdf3c31876ff3985"
+  "gitHead": "e9828cfcb97e25a351f95b39fdf3c31876ff3985",
+  "type": "module"
 }
